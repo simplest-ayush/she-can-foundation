@@ -56,11 +56,13 @@
 //     </div>
 //   );
 // }
-
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import instance from "../api/axios";
 export default function Leaderboard() {
-  const [leaders, setLeaders] = React.useState([]);
+  const [leaders, setLeaders] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     instance.get("/api/leaderboard").then((res) => setLeaders(res.data));
   }, []);
 
