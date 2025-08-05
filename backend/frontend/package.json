@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "intern-portal-backend": "file:.."
+  }
+}
