@@ -11,7 +11,7 @@ dotenv.config({
     path: '../.env'
 })
 app.use(cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: "https://shecan-intern-portal.netlify.app",
     credentials: true
 }))
 app.use(express.json())
